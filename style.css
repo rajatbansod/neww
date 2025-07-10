@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ==========================================Nav section====================== */
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #5c0181;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav .logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+nav .logo i {
+  display: none;
+  color: #fff;
+}
+
+nav .logo img {
+  max-width: 100%;
+  max-height: 65px;
+  padding: 0 15px;
+}
+
+nav .navright {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+
+nav .navright a,
+nav .navright>span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav .navright div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .navright i {
+  font-size: 23px;
+}
+
+nav .navright .downArrow {
+  font-size: 15px;
+}
+
+.rNavright {
+  display: none;
+
+}
+
+.rNavright a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.rmenuBar2 {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #330048;
+  width: 100%;
+  border-top: 1px solid#fff;
+  border-bottom: 1px solid#fff;
+  padding: 8px 8px;
+  overflow-x: scroll;
+}
+
+.rmenuBar2 a,
+.rmenuBar2>span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-right: 1px solid#fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+}
+
+.rmenuBar2 a:last-child,
+.rmenuBar2>span:last-child {
+  border: 0;
+}
+
+#menuBar {
+  width: 100%;
+  height: 42px;
+  background-color: #330048;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#menuBar a,
+#menuBar>span {
+  text-decoration: none;
+  color: #ff7ac9;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+#menuBar .tanim {
+  animation: Color 0.7s linear infinite;
+}
+
+@keyframes Color {
+  0% {
+    color: blue;
+  }
+
+  50% {
+    color: #FFCE54;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.newTag {
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 0;
+  line-height: normal;
+  font-style: normal;
+  font-size: 7px;
+  padding: 1px 4px;
+  border-radius: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+  animation: tagmenu 2s ease-out infinite;
+}
+
+@keyframes tagmenu {
+  0% {
+    color: #fff;
+    background-color: red;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    color: #000;
+    background-color: yellow;
+  }
+}
+
+/* ==============================================main=================================== */
+
+.sideBar {
+  background-color: #bbbbbb;
+}
+
+.sideBar .togglerBox a,
+.sideBar .togglerBox>div
+{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #9e9e9e;
+  padding: 0.12rem 1rem;
+  text-transform: uppercase;
+}
+
+.sideBar .togglerBox .ssHeading {
+  color: #fff;
+  background-color: #bb3886;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+/* =====================Table===================== */
+.contentLinks {
+  display: flex;
+  align-items: center;
+
+}
+
+.contentLinks div {
+  padding: 5px 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.contentLinks img {
+  width: 12px;
+}
+
+.contentLinks a,
+.contentLinks .menuTopLink
+ {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5c0181;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.contentLinks a span,
+.contentLinks .menuTopLink span
+ {
+  font-size: 12px;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.contentHeader a,
+.contentHeader span
+ {
+  background-color: #CCCCCC;
+  padding: 4px 15px;
+  margin: 10px 0;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  border-right: 1px solid#5c0181;
+}
+
+.contentTable table tr .icon {
+  height: 12px;
+}
+
+.contentTable table tr i {
+  font-size: 12px;
+}
+
+.contentTable table tr .gicon {
+  height: 20px;
+}
+
+.contentTable table tr .blank {
+  opacity: 0;
+}
+
+.contentHeader .Cactive {
+  color: #fff;
+  background-color: #5c0181;
+}
+
+.contentTable h5 {
+  text-decoration: none;
+  color: #666667;
+  font-size: 13px;
+}
+
+.contentTable h5:hover {
+  text-decoration: underline;
+}
+
+.contentTable table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 400;
+  color: #000;
+}
+
+.contentTable table tr th {
+  font-size: 11px;
+  padding: 0 15px;
+}
+
+.contentTable table tr {
+  border-bottom: 1px solid #999898;
+}
+
+.contentTable table tr td {
+  padding: 0.1rem 0.4rem;
+  padding-top: 0.2rem;
+
+}
+
+.contentTable table tr td:first-child div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentTable table tr td span:nth-child(2) {
+  background-color: #faa9ba;
+}
+
+.contentTable table tr td span {
+  display: inline-flex;
+  padding: 0.15rem 1.5rem;
+  background-color: #72bbef;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.data {
+  display: flex;
+}
+
+.data span {
+  flex: 1;
+  justify-content: center;
+}
+
+
+.contentImages a {
+  color: #000;
+}
+
+.contentImages .gameCard {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  box-shadow: 0 25px 8px -8px;
+  margin-bottom: 1rem;
+}
+
+.contentImages .gameCard img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contentImages .sText {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #0F2462;
+  padding: 4px 15px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* ====================Responsive====================== */
+@media only screen and (max-width:768px) {
+  nav .logo {
+    padding: 5px;
+  }
+
+  nav .logo img {
+    width: 80px;
+    padding: 0 3px;
+  }
+
+  nav .logo i {
+    font-size: 20px;
+  }
+
+  nav {
+    align-items: unset;
+  }
+
+  .fa-magnifying-glass-plus {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+  }
+
+  .rNavright {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  nav .navright {
+    display: none;
+  }
+
+  .rule {
+    display: none;
+  }
+
+  #menuBar {
+    display: none;
+  }
+
+  .newTag {
+    right: -1px;
+    top: -8px;
+  }
+
+  .contentLinks {
+    display: none;
+  }
+
+  .rmenuBar2 {
+    display: flex;
+  }
+
+  .align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentTable {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .contentTable table tr {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+
+  }
+
+  .contentTable table tr td:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
+
+  .contentTable table tr td:nth-child(2),
+  .contentTable table tr td:nth-child(3),
+  .contentTable table tr td:nth-child(4) {
+    display: inline-block;
+    width: 33.33%;
+  }
+
+
+}
+
+
+/* faq section css */
+.faqSection {
+  color: black;
+  max-width: max(90%, 280px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faqSection h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: max(2.2vw, 1.5rem);
+}
+
+.faqBox {
+  padding: 0.5rem;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.faqBox .faqHead {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+.faqBox .faqHead h5 {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.faqBody {
+  padding: 0;
+  overflow: hidden;
+  max-height: auto;
+  height: 0;
+  transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.showFaqAns {
+  height: auto;
+  padding: 0.2rem 0.5rem;
+  padding-top: 0.8rem;
+}
+
+/* ===================================footer */
+footer {
+  background-color: #5c0181;
+}
+
+footer a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  /* banner */
+  .banner{
+    background-color: #5c0181;
+    text-align: center;
+    color: white;
+    padding: 1rem ;
+    margin-bottom: 0.5rem;
+  }
+  .banner h2,
+  .banner h1
+  {
+    font-size: max(3vw,1.5rem);
+    text-transform: capitalize;
+  }

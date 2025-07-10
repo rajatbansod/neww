@@ -1,0 +1,121 @@
+
+/*=================================== contentHolder css started ===================================== */
+.contentHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: #000;
+    padding:2rem 1rem;
+    min-height:100vh;
+}
+.contentHolder p{
+    text-align: justify;
+
+}
+.contentHolder h1,
+.contentHolder h2,
+.contentHolder h3,
+.contentHolder h4,
+.contentHolder h5,
+.contentHolder h6{
+    text-align: center;
+}
+.contentHolder ul,
+.contentHolder ol
+{
+    min-width: 80%;
+    word-spacing: 5px;
+}
+.contentHolder ul li{
+    list-style-type: disc;
+    margin-bottom: 0.3rem;
+    padding: 0 1rem;
+    line-height: 1.2;
+    font-family: inherit;
+}
+
+/*=================================== contentHolder css started ===================================== */
+
+
+/* ======================= whatsappButton css started ====================================== */
+.whatsappButton{
+    font-size: 1rem ;
+    background-color: var(--whatsapp-light) ;
+    color: white !important;
+    padding: 0.4rem 0.6rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+    text-transform: capitalize;
+    max-width: 18rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+    margin: 0.8rem auto;
+    text-decoration: none;
+    background-color: #25d366 ;
+}
+.whatsappButton::before{
+    content: "";
+    position: absolute;
+    background-color: #075E54;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: 300ms;
+    z-index: -1;
+}
+
+
+.whatsappButton i{
+    color: inherit;
+    transition: 300ms;
+    font-size: 2rem;
+}
+.whatsappButton:hover{
+
+    color: white;
+    border: 2px solid white;
+}
+
+.whatsappButton:hover::before{
+    transform: translateX(0%);
+}
+.whatsappButton:hover i{
+    transform: scale(1.1);
+}
+
+/* ======================= whatsappButton css end ====================================== */
+
+.fixedContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    z-index: 999;
+    width: fit-content;
+}
+.fixedContainer a{
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:#25d366 ;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
